@@ -341,6 +341,58 @@ function __bobthefish_colors -S -a color_scheme -d 'Define colors used by bobthe
       set -x color_desk                     $cyan $colorfg --bold
       set -x color_nix                      $cyan $colorfg --bold
 
+    case 'iceberg'
+      set -l base03  1e2132
+      set -l base02  1e2132
+      set -l base01  6b7089
+      set -l base00  89b8c2
+      set -l base0   839496
+      #set -l base1   93a1a1
+      set -l base2   c6c8d1
+      set -l base3   c6c8d1
+      set -l yellow  e9b189
+      set -l orange  e9b189
+      set -l red     e98989
+      set -l magenta a093c7
+      set -l violet  a093c7
+      set -l blue    84a0c6
+      set -l cyan    89b8c2
+      set -l green   b4be82
+
+      set colorfg $base03
+
+      set -x color_initial_segment_exit     $base02 $red --bold
+      set -x color_initial_segment_private  $base02 $base2
+      set -x color_initial_segment_su       $base02 $green --bold
+      set -x color_initial_segment_jobs     $base02 $blue --bold
+
+      set -x color_path                     $base2 $base00
+      set -x color_path_basename            $base2 $base01 --bold
+      set -x color_path_nowrite             $base2 $red
+      set -x color_path_nowrite_basename    $base2 $red --bold
+
+      set -x color_repo                     $cyan $colorfg
+      set -x color_repo_work_tree           $base2 $colorfg --bold
+      set -x color_repo_dirty               $red $colorfg
+      set -x color_repo_staged              $yellow $colorfg
+
+      set -x color_vi_mode_default          $blue $colorfg --bold
+      set -x color_vi_mode_insert           $green $colorfg --bold
+      set -x color_vi_mode_visual           $yellow $colorfg --bold
+
+      set -x color_vagrant                  $violet $colorfg --bold
+      set -x color_k8s                      $green $colorfg --bold
+      set -x color_aws_vault                $violet $base3 --bold
+      set -x color_aws_vault_expired        $violet $orange --bold
+      set -x color_username                 $base2 $blue --bold
+      set -x color_hostname                 $base2 $blue
+      set -x color_rvm                      $red $colorfg --bold
+      set -x color_node                     $green $colorfg --bold
+      set -x color_virtualfish              $cyan $colorfg --bold
+      set -x color_virtualgo                $cyan $colorfg --bold
+      set -x color_desk                     $cyan $colorfg --bold
+      set -x color_nix                      $cyan $colorfg --bold
+
     case 'solarized' 'solarized-dark'
       set -l base03  002b36
       set -l base02  073642
