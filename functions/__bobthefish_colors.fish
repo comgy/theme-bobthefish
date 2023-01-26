@@ -385,7 +385,7 @@ function __bobthefish_colors -S -a color_scheme -d 'Define colors used by bobthe
       set -x color_aws_vault                $violet $base3 --bold
       set -x color_aws_vault_expired        $violet $orange --bold
       set -x color_username                 $base2 $blue --bold
-      set -x color_hostname                 $base2 $blue
+      set -x color_hostname                 $base02 $blue
       set -x color_rvm                      $red $colorfg --bold
       set -x color_node                     $green $colorfg --bold
       set -x color_virtualfish              $cyan $colorfg --bold
