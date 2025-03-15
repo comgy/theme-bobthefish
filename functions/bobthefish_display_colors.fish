@@ -5,6 +5,7 @@ function bobthefish_display_colors -a color_scheme -d 'Print example prompt colo
     base16 base16-light \
     gruvbox gruvbox-light zenburn \
     dracula nord \
+    iceberg \
     catppuccin-latte catppuccin-frappe \
     catppuccin-macchiato catppuccin-mocha \
     jellybeans \
